@@ -1,0 +1,8 @@
+{
+  "name": "paper-input",
+  "description": "Wrapper for PolymerElements/paper-input",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0",
+    "iron-input": "PolymerElements/iron-input#^2.0.0"
+  }
+}
