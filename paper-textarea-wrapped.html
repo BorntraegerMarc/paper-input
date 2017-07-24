@@ -1,9 +1,9 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../PolymerElements/paper-textarea.html">
 
-<dom-module id="paper-textarea">
+<dom-module id="paper-textarea-wrapped">
     <template>
-        <paper-textarea rows="{{rows}}" max-rows="{{maxRows}}" label="{{label}}" value="{{value}}"
+        <paper-textarea-wrapped rows="{{rows}}" max-rows="{{maxRows}}" label="{{label}}" value="{{value}}"
                         disabled="{{disabled}}" invalid="{{invalid}}" allowed-pattern="{{allowedPattern}}"
                         type="{{type}}" list="{{list}}" pattern="{{pattern}}" required="{{required}}"
                         error-message="{{errorMessage}}" noLabelFloat="{{no-label-float}}"
@@ -13,11 +13,11 @@
                         placeholder="{{placeholder}}" readonly="{{readonly}}" size="{{size}}"
                         autocapitalize="{{autocapitalize}}" autocorrect="{{autocorrect}}"
                         autosave="{{autosave}}" results="{{results}}" accept="{{accept}}"
-                        multiple="{{multiple}}"></paper-textarea>
+                        multiple="{{multiple}}"></paper-textarea-wrapped>
     </template>
     <script>
         Polymer({
-            is: 'paper-textarea',
+            is: 'paper-textarea-wrapped',
             properties: {
                 rows: {
                     type: Number,
