@@ -1,5 +1,5 @@
 {
-  "name": "paper-input",
+  "name": "paper-textarea-wrapped",
   "description": "Wrapper for PolymerElements/paper-input",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
