@@ -1,2 +1,2 @@
-# paper-textarea
-Wrapper for PolymerElements/paper-textarea
+# paper-textarea-wrapped
+Wrapper for PolymerElements/paper-textarea-wrapped
