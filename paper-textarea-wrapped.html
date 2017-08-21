@@ -4,13 +4,14 @@
 <dom-module id="paper-textarea-wrapped">
     <template>
         <paper-textarea rows="{{rows}}" max-rows="{{maxRows}}" label="{{label}}" value="{{value}}"
-                        disabled="{{disabled}}" invalid="{{invalid}}"
-                        required="{{required}}"
+                        disabled="{{disabled}}" invalid="{{invalid}}" allowed-pattern="{{allowedPattern}}"
+                        type="{{type}}" list="{{list}}" pattern="{{pattern}}" required="{{required}}"
                         error-message="{{errorMessage}}" no-label-float="{{noLabelFloat}}"
                         always-float-label="{{alwaysFloatLabel}}" auto-validate="{{autoValidate}}"
-                        autocomplete="{{autocomplete}}"
-                        name="{{name}}"
-                        readonly="{{readonly}}"></paper-textarea>
+                        autocomplete="{{autocomplete}}" inputmode="{{inputmode}}" minlength="{{minlength}}"
+                        maxlength="{{maxlength}}" min="{{min}}" max="{{max}}" step="{{step}}" name="{{name}}"
+                        placeholder="{{placeholder}}" readonly="{{readonly}}" size="{{size}}"
+                        autocapitalize="{{autocapitalize}}" autocorrect="{{autocorrect}}"></paper-textarea>
     </template>
     <script>
         Polymer({
@@ -40,6 +41,18 @@
                     value: false,
                     notify: true
                 },
+                allowedPattern: {
+                    type: String
+                },
+                type: {
+                    type: String
+                },
+                list: {
+                    type: String
+                },
+                pattern: {
+                    type: String
+                },
                 required: {
                     type: Boolean,
                     value: false
@@ -63,12 +76,46 @@
                     type: String,
                     value: 'off'
                 },
+                inputmode: {
+                    type: String
+                },
+                minlength: {
+                    type: Number
+                },
+                maxlength: {
+                    type: Number
+                },
+                min: {
+                    type: String
+                },
+                max: {
+                    type: String
+                },
+                step: {
+                    type: String
+                },
                 name: {
                     type: String
+                },
+                placeholder: {
+                    type: String,
+                    // need to set a default so _computeAlwaysFloatLabel is run
+                    value: ''
                 },
                 readonly: {
                     type: Boolean,
                     value: false
+                },
+                size: {
+                    type: Number
+                },
+                autocapitalize: {
+                    type: String,
+                    value: 'none'
+                },
+                autocorrect: {
+                    type: String,
+                    value: 'off'
                 }
             }
         });
