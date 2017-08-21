@@ -10,8 +10,7 @@
                         always-float-label="{{alwaysFloatLabel}}" auto-validate="{{autoValidate}}"
                         autocomplete="{{autocomplete}}" inputmode="{{inputmode}}" minlength="{{minlength}}"
                         maxlength="{{maxlength}}" min="{{min}}" max="{{max}}" step="{{step}}" name="{{name}}"
-                        placeholder="{{placeholder}}" readonly="{{readonly}}" size="{{size}}"
-                        autocapitalize="{{autocapitalize}}" autocorrect="{{autocorrect}}"></paper-textarea>
+                        placeholder="{{placeholder}}" readonly="{{readonly}}" size="{{size}}"></paper-textarea>
     </template>
     <script>
         Polymer({
@@ -108,14 +107,6 @@
                 },
                 size: {
                     type: Number
-                },
-                autocapitalize: {
-                    type: String,
-                    value: 'none'
-                },
-                autocorrect: {
-                    type: String,
-                    value: 'off'
                 }
             }
         });
