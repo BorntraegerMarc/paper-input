@@ -9,7 +9,11 @@
                         error-message="{{errorMessage}}" no-label-float="{{noLabelFloat}}"
                         always-float-label="{{alwaysFloatLabel}}" auto-validate="{{autoValidate}}"
                         autocomplete="{{autocomplete}}" inputmode="{{inputmode}}" minlength="{{minlength}}"
-                        maxlength="{{maxlength}}" min="{{min}}" max="{{max}}" step="{{step}}" name="{{name}}"></paper-textarea>
+                        maxlength="{{maxlength}}" min="{{min}}" max="{{max}}" step="{{step}}" name="{{name}}"
+                        placeholder="{{placeholder}}" readonly="{{readonly}}" size="{{size}}"
+                        autocapitalize="{{autocapitalize}}"
+                        autosave="{{autosave}}" results="{{results}}" accept="{{accept}}"
+                        multiple="{{multiple}}"></paper-textarea>
     </template>
     <script>
         Polymer({
@@ -94,7 +98,35 @@
                 },
                 name: {
                     type: String
-                }
+                },
+                placeholder: {
+                    type: String,
+                    // need to set a default so _computeAlwaysFloatLabel is run
+                    value: ''
+                },
+                readonly: {
+                    type: Boolean,
+                    value: false
+                },
+                size: {
+                    type: Number
+                },
+                autocapitalize: {
+                    type: String,
+                    value: 'none'
+                },
+                autosave: {
+                    type: String
+                },
+                results: {
+                    type: Number
+                },
+                accept: {
+                    type: String
+                },
+                multiple: {
+                    type: Boolean
+                },
             }
         });
     </script>
